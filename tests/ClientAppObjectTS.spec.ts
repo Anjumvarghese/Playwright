@@ -38,7 +38,7 @@ test(`Automation of Shopping cart application using Page Object Model for purcha
     await summary.getSummary()
     await summary.clickFinish()
     await expect(page.locator(".complete-header")).toHaveText("Thank you for your order!")
-    await page.pause()
+    //await page.pause()
 })
 }
 
