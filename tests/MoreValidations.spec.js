@@ -42,6 +42,6 @@ test('Screenshot',async({page})=>{
 //visual comparison
 test('Visual comparison',async({page})=>{
    await page.goto("https://www.saucedemo.com/") 
-   expect(await page.screenshot()).toMatchSnapshot("saucedemo.png")
+   await expect(page).toHaveScreenshot("saucedemo.png")
 
 })
